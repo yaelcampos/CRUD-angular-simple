@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand  text-center"   href="/">
+<nav class="navbar navbar-dark bg-info">
+    <a class="navbar-brand ml-10 "  href="/">
     Angular Simple CRUD
   </a>
 </nav>
@@ -29,12 +29,12 @@
           <div class="form-group">
             <input type="text "   [(ngModel)]="selectedEmployee.country"  placeholder="Escriba un nuevo pais " class="form-control mt-2">
           </div>
-          <button (click)="addOrEdit()" class=" btn btn-primary mt-4">
+          <button (click)="addOrEdit()" class=" btn btn-info mt-4 ml-4 ">
               Enviar
           </button>
           <button
-          *ngIf="selectedEmployee.id !==0"
-          class="btn btn-danger ml-4" 
+          *ngIf="selectedEmployee.id !==0" class=" btn btn-danger mt-4" 
+          style=" margin-left:15px ;"
           (click)="delete()"
           >
           Eliminar
